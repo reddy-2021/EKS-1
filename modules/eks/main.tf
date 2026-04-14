@@ -16,7 +16,7 @@ module "eks" {
   
   create_iam_role = false
   attach_encryption_policy = false
-  iam_role_arn    = "arn:aws:iam::851725505989:user/kk_labs_user_712788"
+  iam_role_arn    = "arn:aws:iam::654654139377:user/kk_labs_user_505679"
 
   eks_managed_node_groups = {
     default = {
