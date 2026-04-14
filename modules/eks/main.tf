@@ -13,6 +13,7 @@ module "eks" {
   vpc_id     = var.vpc_id
   subnet_ids = var.subnet_ids
   create_cloudwatch_log_group = false
+  enable_cluster_encryption = false
   create_iam_role = false
   iam_role_arn    = "arn:aws:iam::851725505989:user/kk_labs_user_712788"
 
