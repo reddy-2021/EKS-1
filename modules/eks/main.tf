@@ -5,7 +5,7 @@ variable "subnet_ids" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "21.17.0"
+  version = "19.0.0"
 
   name    = "dev-eks-1"
   kubernetes_version = "1.29"
