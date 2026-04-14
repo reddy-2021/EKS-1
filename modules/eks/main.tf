@@ -7,8 +7,8 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.0.0"
 
-  name    = "dev-eks-1"
-  kubernetes_version = "1.29"
+  cluster_name    = "dev-eks-1"
+  cluster_version = "1.29"
 
   vpc_id     = var.vpc_id
   subnet_ids = var.subnet_ids
