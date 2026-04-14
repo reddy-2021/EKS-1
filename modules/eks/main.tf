@@ -14,11 +14,11 @@ module "eks" {
   subnet_ids = var.subnet_ids
   create_cloudwatch_log_group = false
   manage_aws_auth_configmap = false
+  create_iam_role = false
+  iam_role_arn    = "arn:aws:iam::851725505989:user/kk_labs_user_712788"
 
   eks_managed_node_groups = {
     default = {
-      create_iam_role = false
-      iam_role_arn    = "arn:aws:iam::851725505989:user/kk_labs_user_712788"
       desired_size = 2
       max_size     = 3
       min_size     = 1
