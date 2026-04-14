@@ -15,7 +15,7 @@ module "eks" {
   create_cloudwatch_log_group = false
   
   create_iam_role = false
-  attach_encryption_policy = false
+  attach_encryption_policy = true
   iam_role_arn    = "arn:aws:iam::851725505989:user/kk_labs_user_712788"
 
   eks_managed_node_groups = {
