@@ -5,7 +5,7 @@ variable "subnet_ids" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "19.0.0"
+  version = "21.17.0"
 
   cluster_name    = "dev-eks"
   cluster_version = "1.29"
